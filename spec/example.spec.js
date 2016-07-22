@@ -6,7 +6,7 @@ describe('angularjs homepage', () => {
 
     element(by.model('yourName')).sendKeys('Julie');
 
-    let greeting = element(by.binding('yourName'));
+    const greeting = element(by.binding('yourName'));
 
     expect(greeting.getText()).toEqual('Hello Julie!');
   });
@@ -26,8 +26,8 @@ describe('angularjs homepage', () => {
     });
 
     it('should add a todo', () => {
-      let addTodo = element(by.model('todoList.todoText'));
-      let addButton = element(by.css('[value="add"]'));
+      const addTodo = element(by.model('todoList.todoText'));
+      const addButton = element(by.css('[value="add"]'));
 
       addTodo.sendKeys('write a protractor test');
       addButton.click();
