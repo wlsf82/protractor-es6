@@ -1,8 +1,10 @@
+'use strict';
+
 exports.config = {
   directConnect: true,
 
   specs: [
-    'spec/*_spec.js'
+    'spec/*.spec.js'
   ],
 
   capabilities: {
