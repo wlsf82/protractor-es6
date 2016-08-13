@@ -10,7 +10,7 @@ describe('Todo MVC Anguar', () => {
   it('add an item in the todo list', () => {
     todoMvc.visit();
 
-    todoMvc.addItemOnTodoList('Create test without page object');
+    todoMvc.addItemOnTodoList('Create test with page object');
 
     expect(todoMvc.listOfItems.count()).toEqual(1);
   });
@@ -18,7 +18,7 @@ describe('Todo MVC Anguar', () => {
   it('add new item in the todo list', () => {
     todoMvc.visit();
 
-    todoMvc.addItemOnTodoList('Create new test without page object');
+    todoMvc.addItemOnTodoList('Create new test with page object');
 
     expect(todoMvc.listOfItems.count()).toEqual(2);
   });
