@@ -4,8 +4,6 @@ const shordid = require('shortid');
 const uuid = require('node-uuid');
 
 class Helper {
-  constructor() {}
-
   generateRandomEmail() {
     return shordid.generate() + '@email.com';
   }
