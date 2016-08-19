@@ -1,11 +1,11 @@
 'use strict';
 
-const shordid = require('shortid');
+const shortid = require('shortid');
 const uuid = require('node-uuid');
 
 class Helper {
   generateRandomEmail() {
-    return shordid.generate() + '@email.com';
+    return shortid.generate() + '@email.com';
   }
 
   generateRandomString() {
